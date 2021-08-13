@@ -1,0 +1,280 @@
+html {
+    font-family: Verdana,sans-serif;
+}
+
+main {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.headerImage {
+    width: 100%;
+}
+
+header {
+    margin-bottom: 0;
+    background-color: #287113;
+}
+
+body {
+    margin: 0 0 auto;
+}
+
+#nav_menu {
+    clear: both;
+    padding-top: 0;
+    width: 100%;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #287113;
+}
+
+#nav_menu  li #home {
+    float: left;
+}
+
+#nav_menu li #search {
+    float: right;
+}
+
+#nav_menu li #about {
+    float: right;
+}
+#nav_menu li #signup {
+    float: right;
+}
+
+#nav_menu li #cart {
+    float: right;
+}
+
+#nav_menu li #login{
+    float: right;
+}
+
+#nav_menu li #about {
+    float: right;
+}
+#nav_menu li #logout{
+    float: right;
+}
+
+#nav_menu li #profile{
+    float: right;
+}
+
+#cgc li {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-bottom: solid;
+    list-style-type: none;
+    text-align: center;
+    float: center;
+    width: 100%;
+}
+#nav_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav_menu li a:hover {
+    background-color: white;
+    color: #287113;
+    border-color: white;
+}
+
+input, label {
+    margin: 3px;
+}
+
+#aboutHead {
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: solid;
+    text-align: center;
+}
+
+.form_input h2 {
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: solid;
+}
+.form_input {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+label {
+    float: left;
+}
+
+.form_input input {
+    padding: 15px;
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 475px;
+    box-sizing: border-box;
+    color: darkslategray;
+    font-size: 13px;
+}
+
+.input_field {
+    float: left;
+}
+
+#submit {
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    background: black;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-color: black;
+}
+
+.founders {
+    position: relative;
+    margin: auto;
+    float: center;
+    width: 50%;
+}
+
+.founders h2 {
+    text-align: center;
+}
+
+.photo {
+    display: inline-block;
+}
+
+.col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20%;
+    min-width: 13.5em;
+    display: inline-block;
+    padding: 1.5em;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    clear: both;
+    float: center;
+}
+
+.col-lg-4 h3 {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    clear: both;
+    float: center;
+}
+
+
+.display-3 {
+    text-align: center;
+}
+
+.foodPic {
+    border: 2px solid white;
+    float: center;
+    clear: both;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+#quantity {
+    margin-bottom: 1em;
+    width: 23%;
+    text-align: center;
+}
+
+#logout_error {
+    text-align: center;
+}
+
+#cart_error {
+    text-align: center;
+}
+
+
+#confirmation_msg {
+    float: center;
+    text-align: center;
+}
+
+#receipt {
+    border-collapse: ;
+    width: 50%;
+    float: center;
+    margin: auto;
+    border: 1px solid black;
+}
+
+table #receipt, td, th {
+  border: 1px solid black;
+}
+
+h4 #total {
+    float: center;
+    margin: auto;
+}
+
+
+
+.search_bar #search-button {
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    background: black;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-color: black;
+}
+
+input#search-bar {
+    width: 900px;
+    padding: 10px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-color: black;
+}

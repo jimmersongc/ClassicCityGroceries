@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classic City Groceries</title>
+    <link rel="stylesheet" href="style.css">
+    <img class="headerImage" src="headerImage.jpeg">
+</head>
+<body>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="home.php" id="home" >Classic City Groceries</a></li>
+            <li><a href="cart_view.php" id="cart" > My Cart</a> </li>
+            <li><a href="registration.php" id="signup"> Sign Up</a> </li>
+            <li><a href="logout.php" id="logout"> Logout </a> </li>
+            <li><a href="login.php" id="login"> Login </a> </li>
+            <li><a href="aboutus.html" id="about">About Us</a></li>
+            <li><a href="search2.php" id="search">Search</a></li>
+        </ul>
+    </nav>
+    <main>
+        <br><br><br>
+        <form method="post">
+            <label> Search </label>
+            <input type="text" name="search-bar">
+            <input type="submit" name="submit">
+        </form>
+
+    </main>
+
+</body>
+</html>
+
+<?php require_once('database.php'); 
+
+    if(isset($_POST["submit"] )){
+        $search = $_POST["search-bar"];
+        $statement = $db->prepare("SELECT * FROM products WHERE type = '$search'");
+        $statement->execute();
+        $result = $statement->fetchAll();
+        if ($result) 
+        {
+            ?>
+            <br><br><br>
+            <table>
+                <tr>
+                    <th> Name </th>
+                    <th> Type </th>
+                    <th> Price </th>
+                </tr>
+                <?php foreach ($result as $key => $value) { ?>
+                <tr>
+                    <td> <?php echo $result[$key]['name'];?></td>
+                    <td> <?php echo $result[$key]['type'];?></td>
+                    <td> <?php echo $result[$key]['price'];?></td>
+                </tr>
+                
+        <?php
+            }
+            ?>
+            </table>
+        
+        <?php
+
+        }else {
+            echo "Does not exists.";
+        }
+    }
+        ?>
+    
